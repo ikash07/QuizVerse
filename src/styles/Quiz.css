@@ -1,0 +1,34 @@
+/* Quiz page layout */
+.quiz-page {
+  flex: 1;
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.quiz-top-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quiz-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.quiz-actions .btn {
+  flex: 1;
+  min-width: 120px;
+}
+
+@media (max-width: 480px) {
+  .quiz-top-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

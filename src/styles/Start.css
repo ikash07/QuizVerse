@@ -1,0 +1,83 @@
+/* Start page */
+.start-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+}
+
+.start-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 3rem 2.5rem;
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.35);
+  animation: pop-in 0.5s ease;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.start-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.start-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+  color: #312e81;
+}
+
+.start-description {
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.start-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  text-align: left;
+}
+
+.start-features li {
+  background: #f5f3ff;
+  border-radius: 12px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  color: #4338ca;
+  font-weight: 600;
+}
+
+.start-btn {
+  font-size: 1.15rem;
+  padding: 1rem 2.5rem;
+}
+
+@media (max-width: 520px) {
+  .start-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .start-features {
+    grid-template-columns: 1fr;
+  }
+}

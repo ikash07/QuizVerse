@@ -1,1 +1,1 @@
-# QuizVerse---Online-Quiz-Application
+# QuizVerse - Online Quiz Application
